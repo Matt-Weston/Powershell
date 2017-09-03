@@ -1,0 +1,33 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Class Period Lookup" Height="350" Width="843.627">
+    <Grid>
+        <Label Name="label" Content="Search: Separate StudentID by&#xD;&#xA; commas or lines" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="39" Width="171"/>
+        <TextBox Name="searchBox" HorizontalAlignment="Left" Height="224" Margin="10,54,0,0" TextWrapping="Wrap" Text="12345678,87654321" VerticalAlignment="Top" Width="171"/>
+        <Button Name="searchButton" Content="Search" HorizontalAlignment="Left" Height="25" Margin="46,284,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Name="Day" Content="Today is:" HorizontalAlignment="Left" Margin="700,5,-7,0" VerticalAlignment="Top" Width="133"/>
+        <DataGrid AutoGenerateColumns="False"
+                          Height="224"
+                          HorizontalAlignment="Left"
+                          Name="dataGrid1"
+                          VerticalAlignment="Top"
+                          Width="640" Margin="186,54,0,0">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="First Name" Binding="{Binding Path=A}" MinWidth="50" />
+                <DataGridTextColumn Header="Last Name" Binding="{Binding Path=B}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 1" Binding="{Binding Path=C}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 2" Binding="{Binding Path=D}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 3" Binding="{Binding Path=E}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 4" Binding="{Binding Path=F}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 5" Binding="{Binding Path=G}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 6" Binding="{Binding Path=H}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 7" Binding="{Binding Path=I}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 8" Binding="{Binding Path=J}" MinWidth="50" />
+                <DataGridTextColumn Header="Period 9" Binding="{Binding Path=K}" MinWidth="50" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <RadioButton Name="radioButton" Content="Old Settlers ES" HorizontalAlignment="Left" Height="26" Margin="216,5,0,0" VerticalAlignment="Top" Width="359"/>
+        <RadioButton Name="radioButton2" Content="McKamy MS" HorizontalAlignment="Left" Height="26" Margin="346,5,0,0" VerticalAlignment="Top" Width="359"/>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        Title="PS Helpdesk App" Height="495.834" Width="905.493">
+    <Grid Background="White">
+        <Button  
+               Name="btnNewUser"
+               Content="New User"
+               Foreground="white"
+               Background="#337ab7"
+               BorderThickness="1"
+			   BorderBrush="#2e6da4"
+               Padding="0"
+               Margin="10,32,761,395">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button  
+               Name="btnEditUser"
+               Content="Edit User"
+               Foreground="white"
+               Background="#337ab7"
+               BorderThickness="1"
+			   BorderBrush="#2e6da4"
+               Padding="0"
+               Margin="10,75,761,353">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

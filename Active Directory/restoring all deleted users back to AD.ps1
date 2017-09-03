@@ -1,0 +1,1 @@
+Get-ADObject -filter * -IncludeDeletedObjects | ? {$_.objectclass -like "*user*" -and $_.deleted -like "*true*" } | % { Restore-ADObject -Identity $_.objectguid -NewName ((($_.DistinguishedName).split("\")[0]).split("=")[1]) -TargetPath "CN=users,DC=passport,DC=my" }
